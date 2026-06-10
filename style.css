@@ -1,0 +1,23 @@
+
+.navbar{
+    width: 1440px;
+    height: 20px;
+    background-color: white;
+    cursor:pointer;
+}
+body{
+    background-image: url("Images/background1.webp");
+    background-size:cover;
+    min-height: 100vh;
+    
+}
+.container{
+    display: flex;
+    
+}
+.box{
+    width:100px;
+    height:100px;
+    background-color: black;
+    color:white;
+}
