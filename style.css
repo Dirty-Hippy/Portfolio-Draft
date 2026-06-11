@@ -6,18 +6,39 @@
     cursor:pointer;
 }
 body{
-    background-image: url("Images/background1.webp");
+    background-image: url("Images/tree.jpg");
     background-size:cover;
-    min-height: 100vh;
+    background-repeat: no-repeat;
+    min-height: 100vh;       
     
 }
-.container{
-    display: flex;
-    
+.stupid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    align-items: center;
 }
+.stupid div {
+    background-color: white 0%;
+    border: 2px solid black;
+    color: white;
+    height: 200px;
+    width: 100px;
+    cursor: pointer;
+}
+.stupid div:hover{
+    width: 110px;
+    height: 210px;
+}
+
+
 .box{
     width:100px;
     height:100px;
+    display:flex;
+    align-items: self;
     background-color: black;
     color:white;
+    justify-content: center;
+    
 }
