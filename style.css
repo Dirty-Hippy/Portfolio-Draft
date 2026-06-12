@@ -19,7 +19,7 @@ body{
     align-items: center;
 }
 .stupid div {
-    background-color: white 0%;
+    background-color: white;
     border: 2px solid black;
     color: white;
     height: 200px;
