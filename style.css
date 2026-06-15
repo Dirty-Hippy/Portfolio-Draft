@@ -6,30 +6,43 @@
     cursor:pointer;
 }
 .landing{
-    background-image: url("Images/tree.jpg");
+    background-image: url("Images/background3.webp");
+    height: 100vh;
+    background-height: 300vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*background-size:100% 300%; */
+    background-repeat:no-repeat;
     background-size:cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;       
+    
+    /*background-position:top;*/
+    
+    /*min-height: 100vh;       */
     
 }
 .stupid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;*/
     gap: 50px;
-    align-items: center;
+    border: 2px solid black;
+    /*width:400px;*/
+    /*height:400px;*/
 }
 .stupid div {
     background-color: white;
     border: 2px solid black;
     color: white;
-    height: 200px;
-    width: 100px;
+    border-radius: 40%;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
+    align-self:center;*/
+    justify-self: center;*/
 }
 .stupid div:hover{
-    width: 110px;
-    height: 210px;
-    background-color:chartreuse
+    width: 80px;
+    height: 80px;
+    background-color:chartreuse;
 }
 
 
@@ -51,4 +64,11 @@ a {
 .simg{
     width: 600px;
     height: 450px;
+}
+footer{
+    background-color:burlywood;
+    color:brown;
+}
+.test{
+    filter:hue-rotate(90deg);
 }

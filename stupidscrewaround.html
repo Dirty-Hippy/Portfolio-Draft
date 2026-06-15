@@ -48,7 +48,14 @@
         <button onclick="draw()">test</button>
         <br>
         <h2>Screwing with Zoom</h2>
-        <img class="simg"src="Images\tree.jpg">
+        <img id="leaves" src="Images\testgif.gif">
+        <button onclick="document.getElementById('leaves').style.filter='hue-rotate(90deg)'">
+            Change Season
+        </button>
+        <button onclick="document.getElementById('leaves').style.filter='hue-rotate(0deg)'">
+            Change Back
+        </button>
+
 
         
     </body>

@@ -3,8 +3,9 @@
     <head>
         <title>rach rach rach</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
+        
     </head>
-    <body class="landing">
+    <body id="l" class="landing">
         <div class="navbar">
             <a onlick="alert('pressed')">Test1</a>
             <a href="stupidscrewaround.html">Screw Around Page </a>
@@ -22,7 +23,18 @@
             </div>
             <div onclick="alert('careful now')">3</div>
         
+
+
         </div>
+        <img id="leaves" src="Images\testgif.gif">
+        <button onclick="document.getElementById('leaves').style.filter='hue-rotate(90deg)'">
+            Change Season
+        </button>
+        <button onclick="document.getElementById('leaves').style.filter='hue-rotate(0deg)'">
+            Change Back
+        </button>
+
+
 
 
     
