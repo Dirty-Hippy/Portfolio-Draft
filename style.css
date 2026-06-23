@@ -22,14 +22,12 @@
     /*min-height: 100vh;       */
     
 }
-.stupid{
+/* .stupid{
     display: grid;
     grid-template-columns: auto auto auto;*/
-    gap: 50px;
-    border: 2px solid black;
     /*width:400px;*/
     /*height:400px;*/
-}
+/* }
 .stupid div {
     background-color: white;
     border: 2px solid black;
@@ -39,13 +37,13 @@
     width: 50px;
     cursor: pointer;
     align-self:center;*/
-    justify-self: center;*/
-}
+    /* justify-self: center;*/
+/* }
 .stupid div:hover{
     width: 80px;
     height: 80px;
     background-color:chartreuse;
-}
+}  */
 
 
 .box{
@@ -57,6 +55,9 @@
     color:white;
     justify-content: center;
     
+}
+.leaf {
+    cursor:pointer;
 }
 a {
     color: black;

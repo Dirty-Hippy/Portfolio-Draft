@@ -3,6 +3,7 @@
     <head>
         <title>stupidscrewaround</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="script.js" rel="script" type="script">
         <script>
         function changeColor(){
             document.getElementById('text').style.color='cyan';
@@ -10,7 +11,7 @@
         function draw(){
             const canvas= document.getElementById('canvas');
             const ctx= canvas.getContext('2d');
-            //
+            //stupid shape bs
             ctx.fillRect(20, 20, 20, 20);
             ctx.fillRect(0, 0, 20, 20, 'red');
             ctx.beginPath();
@@ -55,6 +56,12 @@
         <button onclick="document.getElementById('leaves').style.filter='hue-rotate(0deg)'">
             Change Back
         </button>
+
+        <!-- Screwing with js legti legit lowkirk screwing up -->
+         <button id="dumbButton">
+            Test test test
+         </button>
+         <img id="inego" src="Images\inego.webp">
 
 
         
