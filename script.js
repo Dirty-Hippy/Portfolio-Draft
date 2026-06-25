@@ -50,9 +50,6 @@ changeSeasonButton2.addEventListener("click", function(){
     changeSeasonButton1.style.display="block";
     console.log("fall");
 })
-amp.addEventListener("click", function(){
-    
-})
 // testButton.addEventListener("click", function(){
 //     stupidText.style.filter="hue-rotate(90deg)";
 // })

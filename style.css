@@ -115,6 +115,9 @@ footer{
     /* Change just the background image to be darker with brightness() */
     filter:brightness(70%);
 }
+.textImg:active{
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
 /* Screwing around with animated crap */
 .zom {
   animation: zoom-in-zoom-out 1s ease infinite;
