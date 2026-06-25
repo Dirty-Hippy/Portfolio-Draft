@@ -22,6 +22,29 @@
     /*min-height: 100vh;       */
     
 }
+.leafBox{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    display:flex;
+    border:black,2px,solid;
+    /* align-items:center;
+    align-content:bottom;
+    justify-content:center;  */
+    height:400px;
+}
+
+.fallingLeaves{
+    /* border:brown,3px,solid; */
+    height:200px;
+    display:flex;
+    background-image: url("Images/testgif.gif");
+    background-repeat:repeat-x;
+}
+/* #leaves{
+    height:200px;
+} */
 /* .stupid{
     display: grid;
     grid-template-columns: auto auto auto;*/
@@ -54,10 +77,14 @@
     background-color: black;
     color:white;
     justify-content: center;
-    
+    margin:100px;
+    /* margin-bottom:5px; */
 }
-.leaf {
+/* .leaf {
     cursor:pointer;
+} */
+.leaf:hover{
+    filter:brightness(70%);
 }
 a {
     color: black;
@@ -75,3 +102,24 @@ footer{
 .test{
     filter:hue-rotate(90deg);
 }
+.textImg{
+    width:200px;
+    height:150px;
+    border:black, 2px, solid;
+    background-image: url("Images/leaf-removebg-preview2.png");
+    cursor: pointer;
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    align-items:center;
+    margin:40px;
+    margin-bottom:5px;
+    /* cursor: pointer; */
+    
+}
+.textImg:hover{
+    /* Change just the background image to be darker with brightness() */
+    filter:brightness(70%);
+}
+
+
