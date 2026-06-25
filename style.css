@@ -5,8 +5,10 @@
     background-color: white;
     cursor:pointer;
 }
+
 .landing{
     background-image: url("Images/background3.webp");
+    /* filter:hue-rotate(100deg); */
     /*backdrop-filter: hue-rotate(90deg);*/
     height: 100vh;
     /*overflow-y: scroll;*/
@@ -16,6 +18,9 @@
     background-size:100% 100%;
     /*height: 1440px;*/
     min-height: 700px;
+    display:flex;
+    flex-direction:column;
+    /* filter:hue-rotate(90deg); */
     /*min-width: 5000vh;*/
     /*background-position:top;*/
     
@@ -23,50 +28,34 @@
     
 }
 .leafBox{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:auto;
-    margin-bottom:auto;
+    /* margin-left:auto; */
+    /* margin-right:auto; */
+    /* margin-top:auto; */
+    /* margin-bottom:2px; */
     display:flex;
-    border:black,2px,solid;
+    align-items:flex-end;
+    justify-content:center;
+    /* border:black,2px,solid; */
     /* align-items:center;
     align-content:bottom;
     justify-content:center;  */
     height:400px;
+    /* flex-direction:column; */
+    /* position:absolute; */
+    /* position:static;
+    bottom:0px; */
 }
 
 .fallingLeaves{
     /* border:brown,3px,solid; */
     height:200px;
+    margin-right:50px;
+    margin-left:50px;
     display:flex;
     background-image: url("Images/testgif.gif");
     background-repeat:repeat-x;
+    filter:hue-rotate(90deg);
 }
-/* #leaves{
-    height:200px;
-} */
-/* .stupid{
-    display: grid;
-    grid-template-columns: auto auto auto;*/
-    /*width:400px;*/
-    /*height:400px;*/
-/* }
-.stupid div {
-    background-color: white;
-    border: 2px solid black;
-    color: white;
-    border-radius: 40%;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    align-self:center;*/
-    /* justify-self: center;*/
-/* }
-.stupid div:hover{
-    width: 80px;
-    height: 80px;
-    background-color:chartreuse;
-}  */
 
 
 .box{
@@ -95,6 +84,9 @@ a {
     width: 600px;
     height: 450px;
 }
+.changeBackButton{
+    display:none;
+}
 footer{
     background-color:burlywood;
     color:brown;
@@ -105,21 +97,38 @@ footer{
 .textImg{
     width:200px;
     height:150px;
-    border:black, 2px, solid;
+    /* border:black, 2px, solid; */
     background-image: url("Images/leaf-removebg-preview2.png");
     cursor: pointer;
     display:flex;
     align-content:center;
     justify-content:center;
     align-items:center;
-    margin:40px;
-    margin-bottom:5px;
+    margin-right:50px;
+
+    /* margin:40px; */
+    /* margin:auto; */
     /* cursor: pointer; */
     
 }
 .textImg:hover{
     /* Change just the background image to be darker with brightness() */
     filter:brightness(70%);
+}
+/* Screwing around with animated crap */
+.zom {
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 150%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 
 

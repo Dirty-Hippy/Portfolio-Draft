@@ -3,11 +3,26 @@
 // let leaf = document.querySelector(".leaf");
 let textImg = document.querySelector(".textImg");
 let landingPage = document.querySelector(".landing");
-let changeSeasonButton = document.querySelector(".changeSeasonButton");
+let changeSeasonButton1 = document.querySelector(".changeSeasonButton");
+let changeSeasonButton2 = document.querySelector(".changeBackButton");
+let leafBox = document.querySelector(".leafBox");
+let fallingLeaves = document.querySelector(".fallingLeaves");
+let amp = document.querySelector("#amp");
+let pp = document.querySelector("#pp");
+let cm = document.querySelector("#cm");
 // let leafBox = document.querySelectoAll(".leafBox");
-function changeSeason(){
-    landingPage.style.filter="hue-rotate(100deg)";
+let stupidTest = document.querySelector(".stupidText");
+let testButton = document.querySelector(".testButton");
+function changeToFall(){
+    // leafBox.style.filter="hue-rotate(265deg)";
+    // fallingLeaves.style.filter="hue-rotate(0deg)";
+    landingPage.style.filter="hue-rotate(265deg)"
+    
+};
+function changeToSpring(){
+    landingPage.style.filter="hue-rotate(0deg)";
 }
+
 
 
 
@@ -22,3 +37,22 @@ textImg.addEventListener("click", function(){
     window.location.replace("aboutme.html");
     console.log("click click");
 })
+changeSeasonButton1.addEventListener("click", function(){
+    changeToFall();
+    changeSeasonButton1.style.display="none";
+    changeSeasonButton2.style.display="block";
+    console.log("fall");
+
+});
+changeSeasonButton2.addEventListener("click", function(){
+    changeToSpring();
+    changeSeasonButton2.style.display="none";
+    changeSeasonButton1.style.display="block";
+    console.log("fall");
+})
+amp.addEventListener("click", function(){
+    
+})
+// testButton.addEventListener("click", function(){
+//     stupidText.style.filter="hue-rotate(90deg)";
+// })
