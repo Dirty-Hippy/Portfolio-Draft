@@ -20,12 +20,21 @@
     min-height: 700px;
     display:flex;
     flex-direction:column;
+    z-index:-1000;
     /* filter:hue-rotate(90deg); */
     /*min-width: 5000vh;*/
     /*background-position:top;*/
     
     /*min-height: 100vh;       */
     
+}
+.rain{
+    /* background-image:url("Images/rain.gif"); */
+    overflow-y:hidden;
+    width:100vw;
+    height:140vh;
+    display:flex;
+    flex-direction:column;
 }
 .leafBox{
     /* margin-left:auto; */
@@ -131,6 +140,21 @@ footer{
     scale: 100%;
   }
 }
+.spellSheet{
+    width:200px;
+    height:200px;
+    background-color:white;
+    color:black;
+    display:none;
+    position:fixed;
+    z-index:1000;
+}
+.spell{
+    cursor:pointer;
+}
+.spell:hover{
+    text-decoration-line:underline;
+}
 .aboutMePage{
     display:flex;
 }
@@ -147,5 +171,20 @@ footer{
     color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.projectsPage{
+     background-image:url("Images/village1.jpg");
+     width:100vw;
+     height:200vh;
+     background-size:cover;
+     background-position: center center;
+     background-repeat:no-repeat;
+} 
+.projectImage{
+    width:50vw;
+    height:100vh;
+    background-color:white;
+    opacity:70%;
 
+    /* background-size:cover; */
+}
 

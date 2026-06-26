@@ -3,8 +3,6 @@
 // let leaf = document.querySelector(".leaf");
 let textImg = document.querySelector(".textImg");
 let landingPage = document.querySelector(".landing");
-let changeSeasonButton1 = document.querySelector(".changeSeasonButton");
-let changeSeasonButton2 = document.querySelector(".changeBackButton");
 let leafBox = document.querySelector(".leafBox");
 let fallingLeaves = document.querySelector(".fallingLeaves");
 let amp = document.querySelector("#amp");
@@ -13,44 +11,94 @@ let cm = document.querySelector("#cm");
 // let leafBox = document.querySelectoAll(".leafBox");
 let stupidTest = document.querySelector(".stupidText");
 let testButton = document.querySelector(".testButton");
+
+//Spell experimentation
+let spellButton = document.querySelector(".spellButton");
+let spellSheet = document.querySelector(".spellSheet");
+let seasonSpell1 = document.querySelector("#seasonSpell1");
+let seasonSpell2 = document.querySelector("#seasonSpell2");
+let timeSpell1 = document.querySelector("#timeSpell1");
+let timeSpell2 = document.querySelector("#timeSpell2");
+let weatherSpell1 = document.querySelector("#weatherSpell1");
+let weatherSpell2 = document.querySelector("#weatherSpell2");
+let rain = document.querySelector(".rain");
 function changeToFall(){
     // leafBox.style.filter="hue-rotate(265deg)";
     // fallingLeaves.style.filter="hue-rotate(0deg)";
-    landingPage.style.filter="hue-rotate(265deg)"
+    fallingLeaves.style.visibility="visible";
+    landingPage.style.filter="hue-rotate(265deg)";
     
 };
 function changeToSpring(){
+    fallingLeaves.style.display="none";
     landingPage.style.filter="hue-rotate(0deg)";
+}
+function openSpellSheet(){
+    spellSheet.style.display="block";
+}
+function changeToNight(){
+    landingPage.style.filter="hue-rotate(90deg)";
+}
+function changeToDay(){
+    landingPage.style.filter="hue-rotate(0deg)";
+}
+function changeToRain(){
+    rain.style.backgroundImage="url('Images/rain.gif')";
+}
+function changeToSunny(){
+    rain.style.backgroundImage="none";
 }
 
 
 
 
-// leaf.addEventListener("click", function(){
-//     leaf.classList
-//     window.location.replace("aboutme.html");
-//     console.log("click click");
+textImg.addEventListener("click", function(){
+  window.location.replace("aboutme.html");
+   console.log("click click");
 
-// });
+ });
 
 
 // textImg.addEventListener("click", function(){
 //     window.location.replace("aboutme.html");
 //     console.log("click click");
 // })
-changeSeasonButton1.addEventListener("click", function(){
+seasonSpell1.addEventListener("click", function(){
     changeToFall();
-    changeSeasonButton1.style.display="none";
-    changeSeasonButton2.style.display="block";
+    seasonSpell1.style.display="none";
+    seasonSpell2.style.display="block";
     console.log("fall");
 
 });
-changeSeasonButton2.addEventListener("click", function(){
+seasonSpell2.addEventListener("click", function(){
     changeToSpring();
-    changeSeasonButton2.style.display="none";
-    changeSeasonButton1.style.display="block";
+    seasonSpell2.style.display="none";
+    seasonSpell1.style.display="block";
     console.log("fall");
+});
+timeSpell1.addEventListener("click", function(){
+    changeToNight();
+    timeSpell1.style.display="none";
+    timeSpell2.style.display="block";
+});
+timeSpell2.addEventListener("click", function(){
+    changeToDay();
+    timeSpell1.style.display="block";
+    timeSpell2.style.display="none";
+});
+weatherSpell1.addEventListener("click", function(){
+    changeToRain();
+    weatherSpell1.style.display="none";
+    weatherSpell2.style.display="block";
+});
+weatherSpell2.addEventListener("click", function(){
+    changeToSunny();
+    weatherSpell1.style.display="block";
+    weatherSpell2.style.display="none";
 })
 // testButton.addEventListener("click", function(){
 //     stupidText.style.filter="hue-rotate(90deg)";
 // })
+spellButton.addEventListener("click", function(){
+    openSpellSheet();
+})
