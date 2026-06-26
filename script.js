@@ -27,16 +27,17 @@ function changeToSpring(){
 
 
 // leaf.addEventListener("click", function(){
+//     leaf.classList
 //     window.location.replace("aboutme.html");
 //     console.log("click click");
 
 // });
 
 
-textImg.addEventListener("click", function(){
-    window.location.replace("aboutme.html");
-    console.log("click click");
-})
+// textImg.addEventListener("click", function(){
+//     window.location.replace("aboutme.html");
+//     console.log("click click");
+// })
 changeSeasonButton1.addEventListener("click", function(){
     changeToFall();
     changeSeasonButton1.style.display="none";

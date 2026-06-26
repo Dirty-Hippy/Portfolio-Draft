@@ -115,9 +115,7 @@ footer{
     /* Change just the background image to be darker with brightness() */
     filter:brightness(70%);
 }
-.textImg:active{
-    animation: zoom-in-zoom-out 1s ease infinite;
-}
+
 /* Screwing around with animated crap */
 .zom {
   animation: zoom-in-zoom-out 1s ease infinite;
@@ -132,6 +130,22 @@ footer{
   100% {
     scale: 100%;
   }
+}
+.aboutMePage{
+    display:flex;
+}
+.aboutMeImage{
+    background-image:url("Images/village1.jpg");
+    width:200vh;
+    height:1440px;
+    overflow-y:scroll;
+
+}
+.aboutMeText{
+    width:200vh;
+    background-color:#5E7FAB;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
