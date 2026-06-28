@@ -1,4 +1,5 @@
 
+/* Landing Page */
 .navbar{
     width: 1440px;
     height: 20px;
@@ -8,28 +9,16 @@
 
 .landing{
     background-image: url("Images/background3.webp");
-    /* filter:hue-rotate(100deg); */
-    /*backdrop-filter: hue-rotate(90deg);*/
     height: 100vh;
-    /*overflow-y: scroll;*/
     overflow-x: hidden;
-    /*background-size:100% 300%; */
     background-repeat:no-repeat;
     background-size:100% 100%;
-    /*height: 1440px;*/
     min-height: 700px;
     display:flex;
     flex-direction:column;
     z-index:-1000;
-    /* filter:hue-rotate(90deg); */
-    /*min-width: 5000vh;*/
-    /*background-position:top;*/
-    
-    /*min-height: 100vh;       */
-    
 }
 .rain{
-    /* background-image:url("Images/rain.gif"); */
     overflow-y:hidden;
     width:100vw;
     height:140vh;
@@ -37,26 +26,13 @@
     flex-direction:column;
 }
 .leafBox{
-    /* margin-left:auto; */
-    /* margin-right:auto; */
-    /* margin-top:auto; */
-    /* margin-bottom:2px; */
     display:flex;
     align-items:flex-end;
     justify-content:center;
-    /* border:black,2px,solid; */
-    /* align-items:center;
-    align-content:bottom;
-    justify-content:center;  */
     height:400px;
-    /* flex-direction:column; */
-    /* position:absolute; */
-    /* position:static;
-    bottom:0px; */
 }
 
 .fallingLeaves{
-    /* border:brown,3px,solid; */
     height:200px;
     margin-right:50px;
     margin-left:50px;
@@ -65,7 +41,6 @@
     background-repeat:repeat-x;
     filter:hue-rotate(90deg);
 }
-
 
 .box{
     width:100px;
@@ -76,11 +51,8 @@
     color:white;
     justify-content: center;
     margin:100px;
-    /* margin-bottom:5px; */
 }
-/* .leaf {
-    cursor:pointer;
-} */
+
 .leaf:hover{
     filter:brightness(70%);
 }
@@ -106,7 +78,6 @@ footer{
 .textImg{
     width:200px;
     height:150px;
-    /* border:black, 2px, solid; */
     background-image: url("Images/leaf-removebg-preview2.png");
     cursor: pointer;
     display:flex;
@@ -114,10 +85,6 @@ footer{
     justify-content:center;
     align-items:center;
     margin-right:50px;
-
-    /* margin:40px; */
-    /* margin:auto; */
-    /* cursor: pointer; */
     
 }
 .textImg:hover{
@@ -126,28 +93,43 @@ footer{
 }
 
 /* Screwing around with animated crap */
-.zom {
-  animation: zoom-in-zoom-out 1s ease infinite;
+.textImg.active {
+  animation: zoom-in-zoom-out 1s ease 1, darken-screen 1s ease 1;
+  /* animation: darken-screen 1s ease 1; */
 }
+.landing.dark{
+    animation: darken-screen 1s ease 1;
+}
+
 @keyframes zoom-in-zoom-out {
   0% {
     scale: 100%;
   }
-  50% {
-    scale: 150%;
-  }
+  
   100% {
-    scale: 100%;
+    scale: 500%;
   }
+}
+@keyframes darken-screen{
+    0%{
+        filter:brightness(100%);
+    }
+    50%{
+        filter:brightness(50%);
+    }
+    100%{
+        filter:brightness(0%);
+    }
 }
 .spellSheet{
     width:200px;
     height:200px;
     background-color:white;
+    margin-bottom:0px;
     color:black;
     display:none;
     position:fixed;
-    z-index:1000;
+    z-index:10;
 }
 .spell{
     cursor:pointer;
@@ -155,6 +137,7 @@ footer{
 .spell:hover{
     text-decoration-line:underline;
 }
+/* About Me Page */
 .aboutMePage{
     display:flex;
 }
@@ -184,7 +167,5 @@ footer{
     height:100vh;
     background-color:white;
     opacity:70%;
-
-    /* background-size:cover; */
 }
 

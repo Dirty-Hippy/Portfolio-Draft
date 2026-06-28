@@ -12,6 +12,8 @@ let cm = document.querySelector("#cm");
 let stupidTest = document.querySelector(".stupidText");
 let testButton = document.querySelector(".testButton");
 
+//Animation Experimentation
+
 //Spell experimentation
 let spellButton = document.querySelector(".spellButton");
 let spellSheet = document.querySelector(".spellSheet");
@@ -22,16 +24,19 @@ let timeSpell2 = document.querySelector("#timeSpell2");
 let weatherSpell1 = document.querySelector("#weatherSpell1");
 let weatherSpell2 = document.querySelector("#weatherSpell2");
 let rain = document.querySelector(".rain");
+let isFall=false;
 function changeToFall(){
     // leafBox.style.filter="hue-rotate(265deg)";
     // fallingLeaves.style.filter="hue-rotate(0deg)";
     fallingLeaves.style.visibility="visible";
     landingPage.style.filter="hue-rotate(265deg)";
+    isFall=true;
     
 };
 function changeToSpring(){
-    fallingLeaves.style.display="none";
+    fallingLeaves.style.visibility="hidden";
     landingPage.style.filter="hue-rotate(0deg)";
+    isFall=false;
 }
 function openSpellSheet(){
     spellSheet.style.display="block";
@@ -40,7 +45,11 @@ function changeToNight(){
     landingPage.style.filter="hue-rotate(90deg)";
 }
 function changeToDay(){
-    landingPage.style.filter="hue-rotate(0deg)";
+    if (isFall){
+        landingPage.style.filter="hue-rotate(265deg)";
+    } else{
+        landingPage.style.filter="hue-rotate(0deg)";
+    }
 }
 function changeToRain(){
     rain.style.backgroundImage="url('Images/rain.gif')";
@@ -52,11 +61,21 @@ function changeToSunny(){
 
 
 
-textImg.addEventListener("click", function(){
-  window.location.replace("aboutme.html");
+textImg.addEventListener("click", event =>{
+//   window.location.replace("aboutme.html");
    console.log("click click");
+   event.target.classList.toggle("active");
+   landingPage.classList.toggle("dark");
 
  });
+
+//  textImg.addEventListener("mouseup", event =>{
+// //   window.location.replace("aboutme.html");
+// //    console.log("click click");
+//    event.target.classList.toggle("zom");
+
+//  });
+
 
 
 // textImg.addEventListener("click", function(){
@@ -101,4 +120,4 @@ weatherSpell2.addEventListener("click", function(){
 // })
 spellButton.addEventListener("click", function(){
     openSpellSheet();
-})
+});
