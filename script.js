@@ -43,6 +43,7 @@ function openSpellSheet(){
 }
 function changeToNight(){
     landingPage.style.filter="hue-rotate(90deg)";
+    landingPage.style.filter="brighness(70%)";
 }
 function changeToDay(){
     if (isFall){
@@ -61,11 +62,34 @@ function changeToSunny(){
 
 
 
-textImg.addEventListener("click", event =>{
+amp.addEventListener("click", event =>{
 //   window.location.replace("aboutme.html");
    console.log("click click");
    event.target.classList.toggle("active");
    landingPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("aboutme.html");
+    }, 900);
+
+ });
+ pp.addEventListener("click", event =>{
+//   window.location.replace("aboutme.html");
+   console.log("click click");
+   event.target.classList.toggle("active");
+   landingPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("projects.html");
+    }, 900);
+
+ });
+ cm.addEventListener("click", event =>{
+//   window.location.replace("aboutme.html");
+   console.log("click click");
+   event.target.classList.toggle("active");
+   landingPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("stupidscrewaround.html");
+    }, 900);
 
  });
 
