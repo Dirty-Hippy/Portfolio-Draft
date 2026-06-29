@@ -25,6 +25,23 @@ let weatherSpell1 = document.querySelector("#weatherSpell1");
 let weatherSpell2 = document.querySelector("#weatherSpell2");
 let rain = document.querySelector(".rain");
 let isFall=false;
+
+//Carosel
+let div1 = document.querySelector("#div1");
+let div2 = document.querySelector("#div2");
+let div3 = document.querySelector("#div3");
+let right = document.querySelector(".right");
+let caroselArray = [div1, div2, div3];
+
+if (right) right.addEventListener("click", function(){
+    // div1.style.display="none";
+    console.log("lcick");
+    caroselArray.push(caroselArray[0]);
+    caroselArray.shift();
+    caroselArray[0].style.display="block";
+    caroselArray[2].style.display="none";
+    // div2.translate(5, 0);
+});
 function changeToFall(){
     // leafBox.style.filter="hue-rotate(265deg)";
     // fallingLeaves.style.filter="hue-rotate(0deg)";
@@ -62,7 +79,7 @@ function changeToSunny(){
 
 
 
-amp.addEventListener("click", event =>{
+if (amp) amp.addEventListener("click", event =>{
 //   window.location.replace("aboutme.html");
    console.log("click click");
    event.target.classList.toggle("active");
