@@ -138,21 +138,49 @@ footer{
     text-decoration-line:underline;
 }
 /* About Me Page */
+html{
+    margin:0;
+}
 .aboutMePage{
     display:flex;
+    width:100vw;
+    margin:0;
+    overflow-x:hidden;
+    min-height:min-content;
 }
 .aboutMeImage{
     background-image:url("Images/village1.jpg");
-    width:200vh;
-    height:1440px;
+    margin-right:0px;
+    background-repeat:repeat-y;
+    width:50%;
+    min-height:1440px;
     overflow-y:scroll;
+    flex:1;
+    background-size:contain;
 
 }
 .aboutMeText{
-    width:200vh;
+    flex:1;
+    width:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     background-color:#5E7FAB;
     color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.self{
+    width:40%;
+    height:20%;
+}
+h3{
+    text-align:center;
+}
+.pdf{
+    margin:10px;
+    width:75%;
+    height:40%;
+    overflow-x:hidden;
 }
 .projectsPage{
      background-image:url("Images/village1.jpg");
