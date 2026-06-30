@@ -162,7 +162,7 @@ html{
 .aboutMeText{
     flex:1;
     /* min-height:min-content; */
-    height:300vh;
+    height:auto;
     width:auto;
     display:flex;
     flex-direction:column;
@@ -180,6 +180,8 @@ html{
     flex-direction:row;
     width:90%;
     height:20%;
+    /* Added by AI */
+    margin-bottom:20px;
 }
 .caroselDiv{
     width:100%;
@@ -190,6 +192,11 @@ html{
     /* background-color:darkolivegreen; */
     /* opacity:70%; */
 
+}
+.caroselDiv img{
+    width:100%;
+    height:100%;
+    border:solid,darkgreen,3px;
 }
 .scoutImg{
     width:100%;
@@ -203,8 +210,11 @@ h3{
 .pdf{
     margin:10px;
     width:75%;
-    height:40%;
+    height:60vh;
     overflow-x:hidden;
+    /* Added by Chat */
+    clear:both;
+    margin-top:30px;
 }
 ul{
     text-align:left;
@@ -218,6 +228,7 @@ ul{
      
 } 
 .projectText{
+    height:auto;
     flex:1;
     width:auto;
     display:flex;
@@ -236,5 +247,14 @@ ul{
     overflow-y:scroll;
     flex:1;
     background-size:contain;
+}
+.proj{
+    width:90%;
+    height:20%;
+    margin:20px;
+}
+.proj:hover{
+    width:100%;
+    height:25%;
 }
 
