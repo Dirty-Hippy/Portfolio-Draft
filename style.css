@@ -162,7 +162,7 @@ html{
 .aboutMeText{
     flex:1;
     /* min-height:min-content; */
-    height:auto;
+    height:max-content;
     width:auto;
     display:flex;
     flex-direction:column;
@@ -178,8 +178,8 @@ html{
 .carosel{
     display:flex;
     flex-direction:row;
-    width:90%;
-    height:20%;
+    width:95%;
+    height:30%;
     /* Added by AI */
     margin-bottom:20px;
 }
@@ -198,6 +198,9 @@ html{
     height:100%;
     border:solid,darkgreen,3px;
 }
+.caroselDiv p{
+    line-height:25px;
+}
 .scoutImg{
     width:100%;
     height:100%;
@@ -210,21 +213,86 @@ h3{
 .pdf{
     margin:10px;
     width:75%;
-    height:60vh;
+    height:100vh;
     overflow-x:hidden;
     /* Added by Chat */
-    clear:both;
-    margin-top:30px;
+    /* clear:both; */
+    /* margin-top:30px; */
+    position:relative
 }
 ul{
     text-align:left;
 }
+.right{
+    width:100px;
+    height:50px;
+    border:5px, solid, darkgreen;
+    cursor:pointer;
+    background-color:cornflowerblue;
+    color:white;
+}
 .projectsPage{
+    margin:0;
+   display:flex;
+   flex-direction:row;
+   width:100vw;
+   height:100vh;
+   overflow-y:hidden;
+   overflow-x:hidden;
+    
+
+}
+.projectsImage{
+    width:70%;
+    background-image:url("Images/village5.jpg");
+    flex:1;
+    background-size:cover;
+
+}
+.projectsText{
+    width:20%;
+}
+#shroom1{
+    position:absolute; 
+    top:140px;
+    left:150px;
+
+}
+#shroom2{
+    position:absolute;
+    bottom:200px;
+    right:200px;
+}
+#shroom2{
+    position:absolute;
+    left:230px;
+    bottom:30px;
+
+}
+.shroomButton{
+    /* background-color:white; */
+    background-image:url("Images/shiny.gif");
+    color:black;
+    width:100px;
+    height:100px;
+    cursor:pointer;
+
+    /* margin-top:50%; */
+    /* margin-bottom:50%;  */
+}
+.shroomButton:hover{
+    border:gold,solid,2px;
+}
+.projectsPageA{
+    background-image:url("Images/map.png");
+    background-size:cover;
+}
+/* .projectsPage{
     display:flex;
     width:100vw;
     margin:0;
     overflow-x:hidden;
-    min-height:min-content;
+    height:max-content;
      
 } 
 .projectText{
@@ -256,5 +324,31 @@ ul{
 .proj:hover{
     width:100%;
     height:25%;
+} */
+.futurePage{
+    display:flex;
+    flex-direction:row;
+}
+.futureText{
+    height:auto;
+    flex:1;
+    width:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:forestgreen;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.futureImage{
+    background-image:url("Images/village5.jpg");
+        margin-right:0px;
+    background-repeat:repeat-y;
+    width:50%;
+    min-height:1440px;
+    overflow-y:scroll;
+    flex:1;
+    background-size:contain;
 }
 

@@ -34,6 +34,12 @@ let div4 = document.querySelector("#div4");
 let right = document.querySelector(".right");
 let caroselArray = [div1, div2, div3, div4];
 
+//Project buttons
+let shroom1 = document.querySelector("#shroom1");
+
+if(shroom1) shroom1.addEventListener("click", function(){
+    console.log("CYOA project");
+})
 if (right) right.addEventListener("click", function(){
     // div1.style.display="none";
     console.log("lcick");
@@ -109,7 +115,7 @@ if (amp) amp.addEventListener("click", event =>{
    event.target.classList.toggle("active");
    landingPage.classList.toggle("dark");
    setTimeout(() => {
-    window.location.replace("stupidscrewaround.html");
+    window.location.replace("future.html");
     }, 900);
 
  });
