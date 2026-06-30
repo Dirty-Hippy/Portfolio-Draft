@@ -30,8 +30,9 @@ let isFall=false;
 let div1 = document.querySelector("#div1");
 let div2 = document.querySelector("#div2");
 let div3 = document.querySelector("#div3");
+let div4 = document.querySelector("#div4");
 let right = document.querySelector(".right");
-let caroselArray = [div1, div2, div3];
+let caroselArray = [div1, div2, div3, div4];
 
 if (right) right.addEventListener("click", function(){
     // div1.style.display="none";
@@ -39,7 +40,10 @@ if (right) right.addEventListener("click", function(){
     caroselArray.push(caroselArray[0]);
     caroselArray.shift();
     caroselArray[0].style.display="block";
+    caroselArray[1].style.display="none";
     caroselArray[2].style.display="none";
+    caroselArray[3].style.display="none";
+    caroselArray[4].style.display="none";
     // div2.translate(5, 0);
 });
 function changeToFall(){
@@ -89,7 +93,7 @@ if (amp) amp.addEventListener("click", event =>{
     }, 900);
 
  });
- pp.addEventListener("click", event =>{
+ if (pp) pp.addEventListener("click", event =>{
 //   window.location.replace("aboutme.html");
    console.log("click click");
    event.target.classList.toggle("active");
@@ -99,7 +103,7 @@ if (amp) amp.addEventListener("click", event =>{
     }, 900);
 
  });
- cm.addEventListener("click", event =>{
+ if (cm) cm.addEventListener("click", event =>{
 //   window.location.replace("aboutme.html");
    console.log("click click");
    event.target.classList.toggle("active");
