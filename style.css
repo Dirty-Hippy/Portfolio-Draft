@@ -416,29 +416,78 @@ ul{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .contactPage{
-    display:flex;
-    background-repeat:no-repeat;
-}
-.contactImage{
-    background-image: url("Images/lake.jpg");
-    background-size:cover;
-    width:50%;
-}
-.contactText{
-    width:50%;
     height:fit-content;
+    background-color:#50148c;
+    color:white;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /* background-repeat:no-repeat; */
+    /* align-items:center; */
+}
+/* .contactImage{
+    background-image: url("Images/jupiter.jpg");
+    background-size:contain;
+    width:40%;
+}
+    */
+.contactText{
+    height:fit-content;
+    background-color:#50148c;
+    color:white;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    border:#31a86d, solid, 3px;
+    padding:5px;
+    margin:5px;
+} 
+
+.contactText input{
+    /* height:50%; */
+    width:80%;
+    size:50;
+    font-size:30px;
+    border:#31a86d,5px,solid;
+}
+.contactText button{
+    width:40%;
+    height:8vh;
+    cursor:pointer;
+    border:5px, solid, #31a86d;
+    margin:10px;
+    font-size:15px;
 }
 .logos{
     display:flex;
     flex-direction:row;
-    width:100%;
-    height:100vh;
-    align-content:end;
+    /* height:100vh; */
+    align-content:center;
     /* margin-bottom:2px; */
+    margin:3px;
 }
+.commentList{
+    /* display:none; */
+    background-color:#328da8;
+    width:100px;
+    height:100px;
+    color:white;
+    display:none;
+    position:absolute;
+    top:5px;
+    left:5px;
+} 
 .contactLogo{
-    width: 25%;
-    height:20%;
-    margin:2%;
+    width:100px;
+    height:80px;
+    margin:10px;
+    cursor:pointer;
+}
+.contactLogo:hover{
+    width:110px;
+    height:90px;
 }
 

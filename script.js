@@ -8,6 +8,7 @@ let fallingLeaves = document.querySelector(".fallingLeaves");
 let amp = document.querySelector("#amp");
 let pp = document.querySelector("#pp");
 let cm = document.querySelector("#cm");
+let f = document.querySelector("#f");
 // let leafBox = document.querySelectoAll(".leafBox");
 let stupidTest = document.querySelector(".stupidText");
 let testButton = document.querySelector(".testButton");
@@ -59,24 +60,42 @@ if (futureImage) futureImage.addEventListener("click", function(){
 //submit button
 let submit = document.querySelector(".submit");
 let contactForm = document.querySelector(".contactForm");
-let commentList = document.querySelector(".commentList p");
+let commentList1 = document.querySelector(".commentList");
+let commentText = document.querySelector(".commentText");
 let commentArray = [];
 if (submit) submit.addEventListener("click", function(){
     console.log("submited");
     let comment = contactForm.value;
     // commentList.innerHTML=comment;
     commentArray.push(comment);
-    commentList.innerHTML=commentArray;
-})
+    // commentList.innerHTML=commentArray;
+    //Claude example here 
+    // localStorage.setItem("myArray", JSON.stringify(myArray));
+
+    localStorage.setItem("commentArray", JSON.stringify(commentArray));
+    // localStorage.getItem(JSON.stringify(commentArray));
+});
 
 //password foolishness
-let access = document.querySelector(".access'");
+let access = document.querySelector(".access");
 let password = document.querySelector(".password");
+let del = document.querySelector(".delete");
 
-access.addEventListener("click", function(){
+if (del) del.addEventListener("click", function(){
+     localStorage.clear();
+ })
+
+if (access) access.addEventListener("click", function(){
+    commentText.innerHTML= localStorage.getItem("commentArray");
+    console.log("password entered?");
+    console.log(password.value);
     let pass = password.value;
     if (pass === "1234"){
-        
+        console.log("right password");
+        commentList1.style.display="block";
+
+    } else{
+        console.log("wrong password you dumby");
     }
 
 });
@@ -211,6 +230,16 @@ if (amp) amp.addEventListener("click", event =>{
     }, 900);
 
  });
+ if (f) f.addEventListener("click", event =>{
+//   window.location.replace("aboutme.html");
+   console.log("click click");
+   event.target.classList.toggle("active");
+   landingPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("contact.html");
+    }, 900);
+
+ });
 
 //  textImg.addEventListener("mouseup", event =>{
 // //   window.location.replace("aboutme.html");
@@ -260,13 +289,13 @@ if (weatherSpell2) weatherSpell2.addEventListener("click", function(){
 // testButton.addEventListener("click", function(){
 //     stupidText.style.filter="hue-rotate(90deg)";
 // })
-spellButton.addEventListener("click", function(){
+if (spellButton) spellButton.addEventListener("click", function(){
     openSpellSheet();
     spellButton.style.display="none";
     closeButton.style.display="block";
 
 });
-closeButton.addEventListener("click", function(){
+if (closeButton) closeButton.addEventListener("click", function(){
     spellButton.style.display="block";
     closeButton.style.display="none";
     spellSheet.style.display="none";
