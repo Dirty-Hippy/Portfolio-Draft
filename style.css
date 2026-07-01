@@ -353,8 +353,7 @@ ul{
     height:100px;
     cursor:pointer;
 
-    /* margin-top:50%; */
-    /* margin-bottom:50%;  */
+    
 }
 .shroomButton:hover{
     border:gold,solid,2px;
@@ -366,67 +365,30 @@ ul{
 .description{
     text-align:center;
 }
-/* .projectsPage{
-    display:flex;
-    width:100vw;
-    margin:0;
-    overflow-x:hidden;
-    height:max-content;
-     
-} 
-.projectText{
-    height:auto;
-    flex:1;
-    width:auto;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    background-color:#f2943d;
-    color:white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.projectImage{
-    background-image:url("Images/village2.jpg");
-    margin-right:0px;
-    background-repeat:repeat-y;
-    width:50%;
-    min-height:1440px;
-    overflow-y:scroll;
-    flex:1;
-    background-size:contain;
-}
-.proj{
-    width:90%;
-    height:20%;
-    margin:20px;
-}
-.proj:hover{
-    width:100%;
-    height:25%;
-} */
 .futurePage{
     display:flex;
-    flex-direction:row;
+    /* flex-direction:row; */
 }
 .futureText{
-    height:auto;
+    height:100vh;
     flex:1;
-    width:auto;
+    width:50vw;
     display:flex;
-    flex-direction:column;
+    /* flex-direction:column; */
     align-items:center;
-    background-color:forestgreen;
+    background-color:lightblue;
     color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .futureImage{
-    background-image:url("Images/village5.jpg");
-        margin-right:0px;
+    background-image:url("Images/village4.jpg");
+    /* margin-right:0px; */
     background-repeat:repeat-y;
-    width:50%;
-    min-height:1440px;
-    overflow-y:scroll;
+    width:50vw;
+    height:100vh;
+    /* min-height:1440px; */
+    /* overflow-y:scroll; */
     flex:1;
     background-size:contain;
 }
