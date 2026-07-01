@@ -47,6 +47,41 @@ let CYOALink = document.querySelector(".CYOALink");
 let changeLink = document.querySelector(".changeLink");
 let rockLink = document.querySelector(".rockLink");
 
+//Train sound
+let train = document.querySelector(".train");
+let futureImage = document.querySelector(".futureImage");
+
+if (futureImage) futureImage.addEventListener("click", function(){
+    console.log("choo choo");
+    train.play();
+});
+
+//submit button
+let submit = document.querySelector(".submit");
+let contactForm = document.querySelector(".contactForm");
+let commentList = document.querySelector(".commentList p");
+let commentArray = [];
+if (submit) submit.addEventListener("click", function(){
+    console.log("submited");
+    let comment = contactForm.value;
+    // commentList.innerHTML=comment;
+    commentArray.push(comment);
+    commentList.innerHTML=commentArray;
+})
+
+//password foolishness
+let access = document.querySelector(".access'");
+let password = document.querySelector(".password");
+
+access.addEventListener("click", function(){
+    let pass = password.value;
+    if (pass === "1234"){
+        
+    }
+
+});
+
+
 if (changeLink) changeLink.addEventListener("click", function(){
     change.style.display="block";
     CYOA.style.display="none";
@@ -190,34 +225,34 @@ if (amp) amp.addEventListener("click", event =>{
 //     window.location.replace("aboutme.html");
 //     console.log("click click");
 // })
-seasonSpell1.addEventListener("click", function(){
+if (seasonSpell1) seasonSpell1.addEventListener("click", function(){
     changeToFall();
     seasonSpell1.style.display="none";
     seasonSpell2.style.display="block";
     console.log("fall");
 });
-seasonSpell2.addEventListener("click", function(){
+if (seasonSpell2) seasonSpell2.addEventListener("click", function(){
     changeToSpring();
     seasonSpell2.style.display="none";
     seasonSpell1.style.display="block";
     console.log("fall");
 });
-timeSpell1.addEventListener("click", function(){
+if (timeSpell1) timeSpell1.addEventListener("click", function(){
     changeToNight();
     timeSpell1.style.display="none";
     timeSpell2.style.display="block";
 });
-timeSpell2.addEventListener("click", function(){
+if (timeSpell2) timeSpell2.addEventListener("click", function(){
     changeToDay();
     timeSpell1.style.display="block";
     timeSpell2.style.display="none";
 });
-weatherSpell1.addEventListener("click", function(){
+if (weatherSpell1) weatherSpell1.addEventListener("click", function(){
     changeToRain();
     weatherSpell1.style.display="none";
     weatherSpell2.style.display="block";
 });
-weatherSpell2.addEventListener("click", function(){
+if (weatherSpell2) weatherSpell2.addEventListener("click", function(){
     changeToSunny();
     weatherSpell1.style.display="block";
     weatherSpell2.style.display="none";

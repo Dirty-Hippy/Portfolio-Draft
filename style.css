@@ -11,9 +11,20 @@
     height:10%;
     background-color:white;
     opacity:70%;
+    display:flex;
+    /* flex-direction:column; */
+    /* align-content:center; */
+    /* align-items:center; */
+    justify-content:center;
+    /* padding-right:10px; */
 }
 .nav a{
     cursor:pointer;
+    margin-right:10%;
+    margin-left:10%;
+    text-align:center;
+    /* margin-right:40%; */
+    /* margin-left:40%; */
 }
 .spellButton{
     background-image:url("Images/scroll1-removebg-preview.png");
@@ -183,10 +194,11 @@ footer{
 /* About Me Page */
 html{
     margin:0;
+    scroll-behavior: smooth;
 }
 .aboutMePage{
     display:flex;
-    width:100vw;
+    width:130vw;
     margin:0;
     overflow-x:hidden;
     min-height:min-content;
@@ -196,7 +208,7 @@ html{
     margin-right:0px;
     background-repeat:repeat-y;
     width:50%;
-    min-height:1440px;
+    /* min-height:1440px; */
     overflow-y:scroll;
     flex:1;
     background-size:contain;
@@ -240,6 +252,7 @@ html{
     width:100%;
     height:100%;
     border:solid,darkgreen,3px;
+    margin-top:5%;
 }
 .caroselDiv p{
     line-height:25px;
@@ -258,10 +271,12 @@ h3{
     width:75%;
     height:100vh;
     overflow-x:hidden;
+    border:5px solid darkgreen;
     /* Added by Chat */
     /* clear:both; */
     /* margin-top:30px; */
-    position:relative
+    position:relative;
+    /* navpanes=0; added into the legit legit link*/
 }
 ul{
     text-align:left;
@@ -367,32 +382,63 @@ ul{
 }
 .futurePage{
     display:flex;
+    flex-direction:row;
     width:100vw;
     margin:0;
     overflow-x:hidden;
     min-height:min-content;
 }
 .futureImage{
-    background-image:url("Images/village6.jpg");
+    background-image:url("Images/purd2.jpg");
     margin-right:0px;
     background-repeat:repeat-y;
-    width:50%;
+    width:50vw;
     min-height:100vh;
     overflow-y:hidden;
+    background-repeat:no-repeat;
     flex:1;
     background-size:contain;
 
+}
+.futureImage{
+    cursor:pointer;
 }
 .futureText{
     flex:1;
     /* min-height:min-content; */
     height:max-content;
-    width:auto;
+    width:50vw;
     display:flex;
     flex-direction:column;
     align-items:center;
-    background-color:#5E7FAB;
+    background-color:darkgoldenrod;
     color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contactPage{
+    display:flex;
+    background-repeat:no-repeat;
+}
+.contactImage{
+    background-image: url("Images/lake.jpg");
+    background-size:cover;
+    width:50%;
+}
+.contactText{
+    width:50%;
+    height:fit-content;
+}
+.logos{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:100vh;
+    align-content:end;
+    /* margin-bottom:2px; */
+}
+.contactLogo{
+    width: 25%;
+    height:20%;
+    margin:2%;
 }
 
