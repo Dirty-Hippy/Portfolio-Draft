@@ -159,6 +159,15 @@ footer{
   animation: zoom-in-zoom-out 1s ease 1, darken-screen 1s ease 1;
   /* animation: darken-screen 1s ease 1; */
 }
+.pic.active{
+    animation: zoom-in-zoom-out 1s ease 1, darken-screen 1s ease 1;
+
+}
+.projectsPage.dark{
+    animation: darken-screen 1s ease 1;
+
+
+}
 .landing.dark{
     animation: darken-screen 1s ease 1;
 }

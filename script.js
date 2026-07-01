@@ -40,13 +40,15 @@ let caroselArray = [div1, div2, div3, div4];
 let shroom1 = document.querySelector("#shroom1");
 let shroom2 = document.querySelector("#shroom2");
 let shroom3 = document.querySelector("#shroom3");
-let change = document.querySelector(".change");
-let CYOA = document.querySelector(".CYOA");
-let rock = document.querySelector(".rock");
+let change = document.querySelector("#change");
+let CYOA = document.querySelector("#CYOA");
+let rock = document.querySelector("#rock");
 let description = document.querySelector(".description");
 let CYOALink = document.querySelector(".CYOALink");
 let changeLink = document.querySelector(".changeLink");
 let rockLink = document.querySelector(".rockLink");
+let projectsPage = document.querySelector(".projectsPage");
+const shroomButton = document.querySelectorAll(".shroomButton");
 
 //Train sound
 let train = document.querySelector(".train");
@@ -108,6 +110,41 @@ if (changeLink) changeLink.addEventListener("click", function(){
     description.innerHTML="This is a website advocating and educating about sustainable agriculture methods and impacts."
 
 });
+if (CYOA) CYOA.addEventListener("click", event =>{
+    shroomButton.style.display="none";
+//   window.location.replace("aboutme.html");
+   console.log("click click");
+   event.target.classList.toggle("active");
+   projectsPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("aboutme.html");
+    }, 900);
+
+ });
+ if (rock) rock.addEventListener("click", event =>{
+    shroomButton.forEach(button=>{
+        button.style.display="none";
+    });
+//   window.location.replace("aboutme.html");
+   console.log("click click");
+   event.target.classList.toggle("active");
+   projectsPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("aboutme.html");
+    }, 900);
+
+ });
+ if (change) change.addEventListener("click", event =>{
+    shroomButton.style.display="none";
+//   window.location.replace("aboutme.html");
+   console.log("click click");
+   event.target.classList.toggle("active");
+   projectsPage.classList.toggle("dark");
+   setTimeout(() => {
+    window.location.replace("aboutme.html");
+    }, 900);
+
+ });
 if (CYOALink) CYOALink.addEventListener("click", function(){
     CYOA.style.display="block";
     change.style.display="none";
