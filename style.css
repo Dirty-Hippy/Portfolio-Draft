@@ -367,29 +367,32 @@ ul{
 }
 .futurePage{
     display:flex;
-    /* flex-direction:row; */
-}
-.futureText{
-    height:100vh;
-    flex:1;
-    width:50vw;
-    display:flex;
-    /* flex-direction:column; */
-    align-items:center;
-    background-color:lightblue;
-    color:white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    width:100vw;
+    margin:0;
+    overflow-x:hidden;
+    min-height:min-content;
 }
 .futureImage{
-    background-image:url("Images/village4.jpg");
-    /* margin-right:0px; */
+    background-image:url("Images/village6.jpg");
+    margin-right:0px;
     background-repeat:repeat-y;
-    width:50vw;
-    height:100vh;
-    /* min-height:1440px; */
-    /* overflow-y:scroll; */
+    width:50%;
+    min-height:100vh;
+    overflow-y:hidden;
     flex:1;
     background-size:contain;
+
+}
+.futureText{
+    flex:1;
+    /* min-height:min-content; */
+    height:max-content;
+    width:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#5E7FAB;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
