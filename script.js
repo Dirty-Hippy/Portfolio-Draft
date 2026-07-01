@@ -16,6 +16,7 @@ let testButton = document.querySelector(".testButton");
 
 //Spell experimentation
 let spellButton = document.querySelector(".spellButton");
+let closeButton = document.querySelector(".closeButton");
 let spellSheet = document.querySelector(".spellSheet");
 let seasonSpell1 = document.querySelector("#seasonSpell1");
 let seasonSpell2 = document.querySelector("#seasonSpell2");
@@ -36,10 +37,61 @@ let caroselArray = [div1, div2, div3, div4];
 
 //Project buttons
 let shroom1 = document.querySelector("#shroom1");
+let shroom2 = document.querySelector("#shroom2");
+let shroom3 = document.querySelector("#shroom3");
+let change = document.querySelector(".change");
+let CYOA = document.querySelector(".CYOA");
+let rock = document.querySelector(".rock");
+let description = document.querySelector(".description");
+let CYOALink = document.querySelector(".CYOALink");
+let changeLink = document.querySelector(".changeLink");
+let rockLink = document.querySelector(".rockLink");
 
-if(shroom1) shroom1.addEventListener("click", function(){
-    console.log("CYOA project");
+if (changeLink) changeLink.addEventListener("click", function(){
+    change.style.display="block";
+    CYOA.style.display="none";
+    rock.style.display="none";
+    description.innerHTML="This is a website advocating and educating about sustainable agriculture methods and impacts."
+
+});
+if (CYOALink) CYOALink.addEventListener("click", function(){
+    CYOA.style.display="block";
+    change.style.display="none";
+    rock.style.display="none";
+    description.innerHTML="This is a Choose Your Own Adventure Game that puts the player in the shoes of a vagabond pirate."
+
+});
+if(rockLink) rockLink.addEventListener("click", function(){
+    rock.style.display="block";
+    change.style.display="none";
+    CYOA.style.display="none";
+    description.innerHTML="This is a rock-paper-scissors simulator."
+
 })
+if(shroom1) shroom1.addEventListener("click", function(){
+    // console.log("CYOA project");
+    change.style.display="block";
+    CYOA.style.display="none";
+    rock.style.display="none";
+    description.innerHTML="This is a website advocating and educating about sustainable agriculture methods and impacts."
+
+});
+if(shroom2) shroom2.addEventListener("click", function(){
+    // console.log("CYOA project");
+    CYOA.style.display="block";
+    change.style.display="none";
+    rock.style.display="none";
+    description.innerHTML="This is a Choose Your Own Adventure Game that puts the player in the shoes of a vagabond pirate."
+
+});
+if(shroom3) shroom3.addEventListener("click", function(){
+    // console.log("CYOA project");
+    rock.style.display="block";
+    change.style.display="none";
+    CYOA.style.display="none";
+    description.innerHTML="This is a rock-paper-scissors simulator."
+
+});
 if (right) right.addEventListener("click", function(){
     // div1.style.display="none";
     console.log("lcick");
@@ -58,6 +110,9 @@ function changeToFall(){
     fallingLeaves.style.visibility="visible";
     landingPage.style.filter="hue-rotate(265deg)";
     isFall=true;
+    spellSheet.style.filter="hue-rotate(0deg)";
+    spellButton.style.filter="hue-rotate(0deg)";
+    rain.style.filter="none";
     
 };
 function changeToSpring(){
@@ -71,6 +126,8 @@ function openSpellSheet(){
 function changeToNight(){
     landingPage.style.filter="hue-rotate(90deg)";
     landingPage.style.filter="brighness(70%)";
+    spellSheet.style.filter="hue-rotate(0deg)";
+    spellButton.style.filter="hue-rotate(0deg)";
 }
 function changeToDay(){
     if (isFall){
@@ -138,7 +195,6 @@ seasonSpell1.addEventListener("click", function(){
     seasonSpell1.style.display="none";
     seasonSpell2.style.display="block";
     console.log("fall");
-
 });
 seasonSpell2.addEventListener("click", function(){
     changeToSpring();
@@ -171,4 +227,12 @@ weatherSpell2.addEventListener("click", function(){
 // })
 spellButton.addEventListener("click", function(){
     openSpellSheet();
+    spellButton.style.display="none";
+    closeButton.style.display="block";
+
 });
+closeButton.addEventListener("click", function(){
+    spellButton.style.display="block";
+    closeButton.style.display="none";
+    spellSheet.style.display="none";
+})
