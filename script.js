@@ -231,6 +231,7 @@ function changeToFall(){
     fallingLeaves.style.visibility="visible";
     rain.style.filter="hue-rotate(110deg)";
     leafBox.style.filter="hue-rotate(250deg)";
+    fallingLeaves.style.filter="hue-rotate(340deg)";
     landingPage.style.filter="hue-rotate(250deg)";
     isFall=true;
     // spellSheet.style.filter="hue-rotate(0deg)";
@@ -239,6 +240,8 @@ function changeToFall(){
 };
 function changeToSpring(){
     fallingLeaves.style.visibility="hidden";
+    rain.style.filter="hue-rotate(0deg)";
+    leafBox.style.filter="hue-rotate(0deg)";
     landingPage.style.filter="hue-rotate(0deg)";
     isFall=false;
 }
