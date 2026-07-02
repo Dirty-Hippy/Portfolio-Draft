@@ -95,7 +95,7 @@ if (access) access.addEventListener("click", function(){
     console.log("password entered?");
     console.log(password.value);
     let pass = password.value;
-    if (pass === "1234"){
+    if (pass === "6767"){
         console.log("right password");
         commentList1.style.display="block";
         console.log(commentText.innerHTML);
@@ -230,11 +230,11 @@ function changeToFall(){
     // fallingLeaves.style.filter="hue-rotate(0deg)";
     fallingLeaves.style.visibility="visible";
     rain.style.filter="hue-rotate(110deg)";
+    spellSheet.style.filter="hue-rotate(3600deg)";
+    spellButton.style.filter="hue-rotate(110deg)";
     leafBox.style.filter="hue-rotate(250deg)";
     fallingLeaves.style.filter="hue-rotate(340deg)";
     landingPage.style.filter="hue-rotate(250deg)";
-    spellSheet.style.filter="hue-rotate(110deg)";
-    spellButton.style.filter="hue-rotate(110deg)";
     isFall=true;
     // spellSheet.style.filter="hue-rotate(0deg)";
     // spellButton.style.filter="hue-rotate(0deg)";
@@ -252,10 +252,12 @@ function openSpellSheet(){
     spellSheet.style.display="block";
 }
 function changeToNight(){
+    spellSheet.style.filter="hue-rotate(270deg)";
+    spellButton.style.filter="hue0-rotate(270deg)";
     landingPage.style.filter="hue-rotate(90deg)";
     landingPage.style.filter="brighness(70%)";
-    spellSheet.style.filter="hue-rotate(0deg)";
-    spellButton.style.filter="hue-rotate(0deg)";
+    // spellButton.style.filter="hue-rotate(270deg)";
+    // spellButton.style.filter="brightness(100%)";
 }
 function changeToDay(){
     if (isFall){
@@ -263,6 +265,7 @@ function changeToDay(){
     } else{
         landingPage.style.filter="hue-rotate(0deg)";
     }
+    spellSheet.style.filter="hue-rotate(0deg)";
 }
 function changeToRain(){
     rain.style.backgroundImage="url('Images/rain.gif')";
