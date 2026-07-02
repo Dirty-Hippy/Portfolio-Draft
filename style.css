@@ -194,7 +194,7 @@ footer{
 }
 .spellSheet{
     width:200px;
-    height:200px;
+    height:150px;
     background-color:bisque;
     margin:5px;
     margin-bottom:0px;
@@ -510,5 +510,14 @@ ul{
 .contactLogo:hover{
     width:110px;
     height:90px;
+}
+.sourcePage{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:darkslateblue;
+    color:white;
+    /* padding:20px; */
+    /* mar?gin:10px; */
+
+
 }
 
