@@ -229,11 +229,12 @@ function changeToFall(){
     // leafBox.style.filter="hue-rotate(265deg)";
     // fallingLeaves.style.filter="hue-rotate(0deg)";
     fallingLeaves.style.visibility="visible";
+    rain.style.filter="hue-rotate(110deg)";
+    leafBox.style.filter="hue-rotate(250deg)";
     landingPage.style.filter="hue-rotate(250deg)";
     isFall=true;
-    spellSheet.style.filter="hue-rotate(0deg)";
-    spellButton.style.filter="hue-rotate(0deg)";
-    rain.style.filter="hue-rotate(110deg)";
+    // spellSheet.style.filter="hue-rotate(0deg)";
+    // spellButton.style.filter="hue-rotate(0deg)";
     
 };
 function changeToSpring(){
